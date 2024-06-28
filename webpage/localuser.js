@@ -262,12 +262,12 @@ class localuser{
     buildservers(){
         const serverlist=document.getElementById("servers");//
 
-        const div=document.createElement("img");
-        img.src="https://cdn.discordapp.com/avatars/622004374587179008/b41c24796842459e13b9504c59a22dcb.webp?size=80"
-        div.classList.add("home","servericon")
-        div.all=this.guildids["@me"];
-        serverlist.appendChild(div)
-        div.onclick=function(){
+        const img = document.createElement("img");
+        img.src="https://cdn.discordapp.com/attachments/1233873992448999456/1256082393916379166/bitmap.svg?ex=667f7963&is=667e27e3&hm=7e61de83f80080b448839d49005502fb14b0e126657f635d3d45c4fb26660cd8&"
+        img.classList.add("home","servericon")
+        img.all=this.guildids["@me"];
+        serverlist.appendChild(img)
+        img.onclick=function(){
             this.all.loadGuild();
             this.all.loadChannel();
         }

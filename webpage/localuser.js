@@ -262,8 +262,8 @@ class localuser{
     buildservers(){
         const serverlist=document.getElementById("servers");//
 
-        const div=document.createElement("div");
-        div.textContent="⌂";
+        const div=document.createElement("img");
+        img.src="https://cdn.discordapp.com/avatars/622004374587179008/b41c24796842459e13b9504c59a22dcb.webp?size=80"
         div.classList.add("home","servericon")
         div.all=this.guildids["@me"];
         serverlist.appendChild(div)
